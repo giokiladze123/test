@@ -1,0 +1,153 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  max-width:100vw;
+  min-height:100vh;
+  padding:71px 24px;
+  background: #ECF2F8;
+}
+
+main{
+display:grid;
+grid-template-columns: auto;
+gap:24px;
+}
+
+.card{
+  width:100%;
+  padding:26px 32px 32px 32px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
+  border-radius: 8px;
+}
+
+.violette{
+  background: #733FC8;
+  background-image:url(./images/bg-pattern-quotation.svg);
+  background-position: top 0 right 24px;
+  background-repeat: no-repeat;
+}
+
+.person{
+  display:flex;
+  gap:17px;
+}
+
+.author img{
+  border: 2px solid #A775F1;
+  border-radius:50%;
+  width:28px;
+  height:28px;
+}
+
+.name{
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+
+.status{
+  margin-top:4px;
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 11px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.title{
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-top:18px;
+}
+
+.content{
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px; 
+  color: #CFCFCF;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin-top:40px;
+}
+
+.gray{
+  background: #48556A;
+}
+
+.jonathan img{
+  border:none;
+}
+
+
+.gray p{
+  margin-top:16px;
+}
+
+.white{
+  background:white;
+}
+
+.white h1{
+  color: #48556A;
+}
+
+.white h2{
+  color: #48556A;
+}
+
+.white p{
+  color: #48556A;
+  margin-top:16px;
+}
+
+.black{
+  background: #19202D;
+}
+
+.black p{
+  margin-top:16px;
+}
+
+@media screen and (min-width: 1440px) {
+
+  body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main{
+    grid-template-columns: repeat(4,255px);
+    grid-template-rows: 282px 266px;
+  }
+
+  .violette{
+    grid-column: 1/3;
+  }
+
+  .kira{
+    grid-row: 1/3;
+    grid-column:4/4 ;
+  }
+
+  .black{
+    grid-column: 2/4;
+  }
+
+}
